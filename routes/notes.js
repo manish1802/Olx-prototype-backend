@@ -26,6 +26,7 @@ notesrouter.get("/getnote/:id", async (req, res) => {
    return res.json(error);
   }
 });
+//
 notesrouter.get("/getnote/:user_id", async (req, res) => {
   const q = "SELECT * FROM  notes  WHERE user_id = ? ";
   try {
